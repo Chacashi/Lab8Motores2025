@@ -1588,6 +1588,7 @@ GameObject:
   - component: {fileID: 1033351861}
   - component: {fileID: 1033351860}
   - component: {fileID: 1033351859}
+  - component: {fileID: 1033351863}
   m_Layer: 0
   m_Name: Enemigo 1
   m_TagString: Untagged
@@ -1641,7 +1642,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c318f5610ee0e954f8b21acce4a19d47, type: 2}
+  - {fileID: 2100000, guid: fcb4bad9bf015264893fcc090bf6bb93, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1686,6 +1687,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033351863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033351858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a85a8c215a555546927b1284824ea7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: 4c394fcac6f273e43865cd5a7a484894, type: 2}
+  material: {fileID: 2100000, guid: fcb4bad9bf015264893fcc090bf6bb93, type: 2}
 --- !u!1 &1061721791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,6 +2320,7 @@ GameObject:
   - component: {fileID: 1272567935}
   - component: {fileID: 1272567934}
   - component: {fileID: 1272567933}
+  - component: {fileID: 1272567937}
   m_Layer: 0
   m_Name: Enemigo 2
   m_TagString: Untagged
@@ -2358,7 +2374,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fcb4bad9bf015264893fcc090bf6bb93, type: 2}
+  - {fileID: 2100000, guid: c318f5610ee0e954f8b21acce4a19d47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2403,6 +2419,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1272567937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272567932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a85a8c215a555546927b1284824ea7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorData: {fileID: 11400000, guid: 31c7b29c4c7e0f44584177aee064ba44, type: 2}
+  material: {fileID: 2100000, guid: c318f5610ee0e954f8b21acce4a19d47, type: 2}
 --- !u!1 &1402503585
 GameObject:
   m_ObjectHideFlags: 0
