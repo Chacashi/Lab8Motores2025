@@ -1,6 +1,7 @@
 using System;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckWin()
     {
-        if (playerCoins >= 10)
+        if (playerCoins >= 9)
         {
             OnWin?.Invoke();
             return;
@@ -70,7 +71,18 @@ public class GameManager : MonoBehaviour
         if (playerLife <= 0)
         {
             OnLoose?.Invoke();
+            ResetGame();
             return;
         }
+    }
+
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("Game 2");
+        playerLife = maxLife;
+        playerCoins = 0;
+        OnCoinUpdate?.Invoke(playerCoins);
+        OnLifeUpdate?.Invoke(playerLife);
     }
 }
