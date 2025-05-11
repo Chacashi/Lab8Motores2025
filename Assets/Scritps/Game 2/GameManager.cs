@@ -45,12 +45,15 @@ public class GameManager : MonoBehaviour
 
     public void ModifyLife(int modify)
     {
-        if (playerLife < maxLife)
+
+        playerLife += modify;
+        
+        if (PlayerLife > maxLife)
         {
-            playerLife += modify;
-            OnLifeUpdate?.Invoke(playerLife);
+            playerLife = maxLife;
         }
-       
+        OnLifeUpdate?.Invoke(playerLife);
+
     }
 
     public void CheckWin()

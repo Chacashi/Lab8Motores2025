@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f302c7fa80e79a438f9c79c43c0ca78, type: 3}
-  m_Name: ColorData Enemigo 4
+  m_Name: ColorData 1
   m_EditorClassIdentifier: 
-  color: {r: 0.03773582, g: 0.037268754, b: 0.036845826, a: 1}
+  color: {r: 0.92370224, g: 0, b: 1, a: 1}
