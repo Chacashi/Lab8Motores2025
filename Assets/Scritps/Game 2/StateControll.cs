@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StateControll : MonoBehaviour
@@ -26,7 +27,10 @@ public class StateControll : MonoBehaviour
     {
         if(other.gameObject.layer == 6)
         {
+
             GameManager.Instance.ResetGame();
+            SceneManager.LoadScene("Game 2");
+            
         }
     }
 }

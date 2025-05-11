@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
+            return;
         }
             Instance = this;
         DontDestroyOnLoad(this.gameObject);
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
         if (playerLife <= 0)
         {
             OnLoose?.Invoke();
+            SceneManager.LoadScene("Game 2");
             ResetGame();
             return;
         }
@@ -79,7 +81,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        SceneManager.LoadScene("Game 2");
+        Time.timeScale = 1f;
         playerLife = maxLife;
         playerCoins = 0;
         OnCoinUpdate?.Invoke(playerCoins);
